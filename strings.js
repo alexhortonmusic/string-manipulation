@@ -15,7 +15,8 @@ function reversal(testString) {
 }
 
 function alphabits(testString) {
-	document.getElementById("alphabits").innerHTML = testString.split("").sort(function (a,b) {
+	var alphabitsDiv = document.getElementById("alphabits");
+	alphabitsDiv.innerHTML = testString.split("").sort(function (a,b) {
     a = a.toLowerCase();
     b = b.toLowerCase();
     if( a == b) return 0;
@@ -30,7 +31,6 @@ function palindrome(testString) {
 	} else {
 		palindromeDiv.innerHTML = "Your word is NOT a palindrome.";
 	}
-
 }
 
 function doStuff (testString) {
